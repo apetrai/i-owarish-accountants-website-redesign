@@ -300,12 +300,10 @@ a {
        
     }
     .aat {
-        margin-right: 30px;
-        margin-top: 6px;
-        right: 0px;
+        right: 0px !important;
     }
     .ifa{
-        margin-right: -25px;
+        margin-right: -60px !important;
     }
  
 }
