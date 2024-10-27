@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Owarish & Co Accountants</title>
     <link rel="stylesheet" href="styles.css">
+    <script async type="text/javascript" src="scripts.js"></script>
+    <link rel="icon" href="Images/IOWARISH_LOGOICON.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -17,12 +19,12 @@
             <img class="ifa" src="Images/io-ifa-logo_orig.png">
             <img class="aat" src="Images/io-aat-logo_orig.png">
             <h1 class="logo">I Owarish & Co Accountants</h1>
-            <div class="link-container">
+            <div id="nav-links"class="link-container">
                 <ul>
-                    <li class="nav-links"><a href="#">Home</a></li>
-                    <li class="nav-links"><a href="#">About Us</a></li>
-                    <li class="nav-links"><a href="#">Services</a></li>
-                    <li class="nav-links"><a href="#">Contact</a></li>
+                    <li class="nav-links"><a href="index.html" class="active">Home</a></li>
+                    <li class="nav-links"><a href="about.html">About Us</a></li>
+                    <li class="nav-links"><a href="services.html">Services</a></li>
+                    <li class="nav-links"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -40,22 +42,21 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <h2>Our Specialisations</h2>
-        <div class="service-list">
+        <div >
             <ul class="service-list">
-            <li class="service-item"><i class="fas fa-calculator"></i> Financial Accounting and Accounts Preparation</li>
-            <li class="service-item"><i class="fas fa-chart-line"></i> Budgeting and Forecasting</li>
-            <li class="service-item"><i class="fas fa-clipboard-list"></i> Management Accounting</li>
-            <li class="service-item"><i class="fas fa-money-check-alt"></i> Payroll</li>
-            <li class="service-item"><i class="fas fa-search-dollar"></i> Forensic Accounting</li>
-            <li class="service-item"><i class="fas fa-percent"></i> Value Added Tax</li>
-            <li class="service-item"><i class="fas fa-certificate"></i> Income Certification</li>
-            <li class="service-item"><i class="fas fa-chart-pie"></i> Business Planning</li>
-            <li class="service-item"><i class="fas fa-user"></i> Personal Income Tax</li>
-            <li class="service-item"><i class="fas fa-briefcase"></i> Business Income Tax</li>
-            <li class="service-item"><i class="fas fa-building"></i> Corporation Tax</li>
-            <li class="service-item"><i class="fas fa-chart-area"></i> Capital Gains Tax</li>
-            <li class="service-item"><i class="fas fa-heartbeat"></i> Inheritance Tax</li>
-            <li class="service-item"><i class="fas fa-gavel"></i> Trust Tax</li>
+            <li class="service-item"><a href="https://www.gov.uk/annual-accounts" ><i class="fas fa-calculator"></i> Financial Accounting & Accounts Preparation</a></li>
+            <li class="service-item"><a ><i class="fas fa-chart-line"></i> Budgeting and Forecasting</a></li>
+            <li class="service-item"><a href="https://www.investopedia.com/terms/m/managerialaccounting.asp"><i class="fas fa-clipboard-list"></i> Management Accounting</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/paye-for-employers"><i class="fas fa-money-check-alt"></i> Payroll</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/how-vat-works"><i class="fas fa-percent"></i> Value Added Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837"><i class="fas fa-certificate"></i> Income Certification</a></li>
+            <li class="service-item"><a><i class="fas fa-chart-pie"></i> Business Planning</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/income-tax-rates"><i class="fas fa-user"></i> Personal Income Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/corporation-tax-rates"><i class="fas fa-briefcase"></i> Business Income Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/corporation-tax-rates"><i class="fas fa-building"></i> Corporation Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/capital-gains-tax"><i class="fas fa-chart-area"></i> Capital Gains Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/inheritance-tax"><i class="fas fa-heartbeat"></i> Inheritance Tax</a></li>
+            <li class="service-item"><a href="https://www.gov.uk/guidance/trusts-and-inheritance-tax"><i class="fas fa-gavel"></i> Trust Tax</a></li>
             <!-- Add more services as needed -->
             </ul>
         </div>
@@ -65,6 +66,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 I Owarish & Co Accountants. All Rights Reserved.</p>
+            <p id="display"></p>
         </div>
     </footer>
 </body>

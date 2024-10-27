@@ -1,10 +1,13 @@
 /* Basic Reset */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+a {
+    color: inherit;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -71,6 +74,20 @@ body {
     font-size: 17px;
     transition: background-color 0.3s, color 0.3s;
 }
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* Styling for the active link */
+#nav-links ul li a.active {
+    color: white;
+    background-color: #003366;
+    /* Background color to highlight active page */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
 
 .nav-links a:hover {
     background-color: #003366;
@@ -184,7 +201,7 @@ body {
 
 /* Services Section */
 .services {
-    padding: 2em 1em;
+    padding: 1em 2em;
     text-align: center;
     color: #003366;
 }
@@ -193,20 +210,35 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    overflow: wrap;
     gap: 1em;
 }
 
 .service-item {
     text-decoration: none;
     text-align: center;
-    width: 90px;
+    width: 100px;
     list-style-type: none;
 }
+
+.service-item:hover {
+    cursor: pointer;
+    background-color: #003366;
+    color: white !important;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 .icon {
     font-size: 2em;
 }
+
 
 /* Footer */
 .footer {
@@ -267,7 +299,7 @@ body {
     }
     .aat {
         margin-right: 30px;
-        margin-top: 10px;
+        margin-top: 6px;
     }
  
 }
