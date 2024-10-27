@@ -297,10 +297,15 @@ a {
        display: inline;
        height: 90px;
        margin-left: 110px;
+       
     }
     .aat {
         margin-right: 30px;
         margin-top: 6px;
+        right: 0px;
+    }
+    .ifa{
+        margin-right: -25px;
     }
  
 }
@@ -350,7 +355,7 @@ a {
 }
 
 .about {
-    color:#003366
+    color:#003366 !important;
 }
 
 /* Responsive Adjustments */
