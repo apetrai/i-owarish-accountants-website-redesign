@@ -13,4 +13,3 @@
   } else {
           document.getElementById('display').innerHTML = "Currently outside business hours. | Monday - Friday 09:30 - 17:30";
   }
-
