@@ -11,7 +11,6 @@ a {
 body {
     font-family: Arial, sans-serif;
 }
-
 /* Popup Overlay */
 .popup-overlay {
     position: fixed;
@@ -24,6 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 10px;
+    /* Extra padding for smaller screens */
 }
 
 /* Popup Content */
@@ -31,19 +32,35 @@ body {
     background-color: white;
     padding: 20px;
     max-width: 400px;
+    width: 90%;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.popup-content h2 {
-    margin-bottom: 10px;
-}
-
-.popup-content p {
+/* Scrollable Terms Text */
+.terms-text {
+    max-height: 200px;
+    /* Limit height to create scrolling area */
+    overflow-y: auto;
     margin-bottom: 20px;
+    /* Space between text and button */
+    text-align: left;
+    /* Align text left for readability */
+    font-size: 0.9em;
 }
 
+/* Scrollbar Styling */
+.terms-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terms-text::-webkit-scrollbar-thumb {
+    background: #003366;
+    border-radius: 4px;
+}
+
+/* Button Styling */
 .popup-content button {
     padding: 10px 20px;
     background-color: #003366;
@@ -51,12 +68,45 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    /* Full-width button on mobile */
 }
 
 .popup-content button:hover {
     background-color: #005599;
 }
 
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 15px;
+    }
+
+    .terms-text {
+        max-height: 150px;
+        /* Reduced height for smaller screens */
+    }
+
+    .popup-content button {
+        font-size: 0.9em;
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 15px;
+    }
+
+    .popup-content p {
+        font-size: 0.9em;
+    }
+
+    .popup-content button {
+        font-size: 0.9em;
+    }
+}
 /* Navbar */
 .navbar {
     display: flex;
