@@ -354,6 +354,7 @@ a {
 
 .about {
     color:#003366 !important;
+    text-align: left;
 }
 
 /* Responsive Adjustments */
@@ -362,5 +363,55 @@ a {
         text-align: center;
         overflow-wrap: inherit;
         font-size: 15px;
+    }
+}
+
+/* Services html file*/
+
+
+
+
+.item:hover {
+    cursor: pointer;
+    background-color: #003366;
+    color: white !important;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.Taxation {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.item {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    margin-left: 130px;
+}
+
+#less {
+    animation: bold;
+    animation-duration: 900ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bold {
+    from {font-weight: normal ;}
+    to{font-weight: bold;}
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .Taxation {
+        overflow-y: scroll;      
+    }
+    .item {
+        margin-left: 2px;
     }
 }

@@ -9,7 +9,7 @@
   } else if (day == 6) {
       document.getElementById('display').innerHTML = "Appointments only on Saturdays.";
   } else if (hour >= 9 && hour <= 17.5) {
-    document.getElementById('display').innerHTML = "Currently opened on Monday - Friday. 09:30 - 17:30";
+    document.getElementById('display').innerHTML = "Currently open. <br> Monday - Friday | 09:30 - 17:30";
   } else {
-          document.getElementById('display').innerHTML = "Currently outside business hours. | Monday - Friday 09:30 - 17:30";
+          document.getElementById('display').innerHTML = "Currently outside business hours. <br>  Monday - Friday | 09:30 - 17:30";
   }
