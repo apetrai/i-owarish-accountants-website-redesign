@@ -75,16 +75,19 @@ body {
 /* Responsive Design for Smaller Screens */
 @media (max-width: 786px) {
     .popup-content {
-        padding: 15px;
+        padding: 10px;
+        overflow: hidden;
     }
 
+    
     .terms-text {
-        max-height: 60vh;
+        max-height: 30vh !important;
+        overflow-y: auto !important; 
         /* Reduce height slightly on small screens */
     }
 
     .popup-content button {
-        font-size: 0.9em;
+        font-size: 1.1em !important;
     }
 }
 /* Navbar */
