@@ -483,13 +483,21 @@ a {
     to{font-weight: bold;}
 }
 
+h2 {
+    color: #003366
+}
+
+#privacy {color: #003366;}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .Taxation {
-        overflow-y: scroll;      
+        display: grid;
+        
     }
     .item {
-        margin-left: 2px;
+      
+        margin-left: 5px;
     }
 }
 
