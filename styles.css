@@ -113,11 +113,11 @@ body {
 }
 /* Right-aligned Images */
 .ifa,
-.aat {
+.aat,
+.shield {
     height: 140px;
     position: absolute;
     top: 5px;
-   
 }
 
 .ifa {
@@ -127,6 +127,12 @@ body {
 .aat {
     right: 20px;
     margin-top: 15px;
+}
+
+.shield {
+    right: 400px;
+    margin-top: 35px;
+    height: 90px;
 }
 
 /* Navigation Links */
@@ -363,14 +369,15 @@ a {
     .service-item {
         width: 100%;
     }
-.Logo-face {
-    position: relative;
-    height: 70px;
-    margin-right: 10px;
-}
+    .Logo-face {
+        position: relative;
+        height: 70px;
+        margin-right: 10px;
+    }
     /* Adjust Right-Aligned Images */
     .ifa,
-    .aat {
+    .aat,
+    .shield {
        display: inline;
        height: 90px;
        margin-left: 110px;
@@ -379,10 +386,13 @@ a {
     .aat {
         right: 0px !important;
     }
-    .ifa{
+    .ifa    {
         margin-right: -60px !important;
     }
- 
+    .shield {
+      margin-right: -180px !important;
+      height: 50px;
+    }
 }
 
 /*About HTML styles*/
